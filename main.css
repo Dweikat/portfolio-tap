@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root {
+    --maincolor: #cb3931;
+    --white-gray: #f0f0f0;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.margins {
+    margin: 0 100px ; 
+}
+
+
+.top-box {
+    overflow: hidden;
+}
+.top-box p {
+    margin : 150px 0;
+    color: var(--maincolor);
+    width: 30%;
+    display: inline-block;
+}
+.top-box img {
+    float: right;
+    width: 35%;
+   margin-right: 50px;
+    
+}
+
+.gray-box {
+    background-color: rgba(128, 128, 128, 0.247);
+    width: calc(100% - 100px);
+    margin-left:100px;
+    position: absolute;
+    top: 350px;
+    height:100%;
+    z-index: -41;
+}
+
+.mid-box {
+    margin: 100px;
+    display: block;
+}
+.mid-box h1 {
+    font-size:70pt;
+}
+.mid-box div .position {
+    display: inline-block;
+    color: var(--maincolor);
+
+}
+
+.mid-box div i {
+    float: right;
+    margin: 0 20px;
+}
+.first-part-head {
+    display: inline-block;
+}
+
+.content {
+    display: inline-block;
+    margin-left: 20%;
+    color: var(--maincolor);
+}
+
+.exprience-education {
+    display: flex;
+    padding: 100px 0;
+}
+.exprience-education h2 {
+    color: var(--maincolor);
+    text-transform: uppercase;
+}
+.exprience-education .period {
+   margin: 30px 0 0 0 ; 
+}
+
+.exprience-education h3 span {
+    color: var(--maincolor);
+}
+.discpt  {
+    color:gray;
+}
+ ul li { 
+      margin-left: 50px;
+}
+
+.column {
+    width: 50%;
+}
+
+@media only screen and (max-width:600px) {
+    .margins {
+        overflow: hidden;
+        margin: 5%;
+    }
+    .top-box {    
+        overflow: visible;
+    }
+    .top-box p {
+        width: 90%;
+        display: block;
+        font-size: small;
+        margin-top: 0;
+       
+    }
+    .top-box img {
+        display: block;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 100px;
+        
+    }
+    .mid-box h1 {
+        font-size:20pt;
+    }
+    .gray-box{
+    width: calc(100% - 50px);
+    margin-left:50px;
+    position: absolute;
+    top:calc(100% + 300px);
+    height:100%;
+    }
+    .mid-box{
+    
+        margin: 0;
+        float: none;
+    }
+
+    .mid-box div .position {
+        font-size: smaller;
+    }
+    .mid-box div i {
+        margin: 0 3px ;
+    }
+    .content {
+        font-size: smaller;
+    }
+    .exprience-education{
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+
+
+}
+
